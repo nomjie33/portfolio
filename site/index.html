@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naomi Isabelle K. Reyes — Portfolio</title>
+<meta name="description" content="Computer Science student at De La Salle University. Backend, data engineering and research projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav__brand" href="#top">Naomi Reyes</a>
+  <input type="checkbox" id="navtoggle" class="nav__cb">
+  <label for="navtoggle" class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></label>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">Computer Science @ De La Salle University</p>
+      <h1>Naomi Isabelle<br>K. Reyes</h1>
+      <p class="hero__blurb">
+        I build the parts of software that have to be right — backends, data models and
+        pipelines — and I like knowing <em>why</em> a number came out the way it did.
+        Currently a BS Computer Science student majoring in Software Technology,
+        DOST-SEI scholar, and a batch legislator for my university's student government.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--solid" href="#projects">See my projects</a>
+        <a class="btn btn--ghost" href="https://github.com/nomjie33" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/naomireyes33/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <div class="hero__ring"></div>
+      <img src="assets/naomi.png" alt="Portrait of Naomi Isabelle K. Reyes">
+    </div>
+  </div>
+  <div class="hero__bar"><i></i><i></i><i></i></div>
+</section>
+
+<!-- ============ ABOUT / STATS ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <h2 class="h2">About</h2>
+    <div class="about">
+      <div class="about__copy">
+        <p>
+          I'm a Computer Science student at <strong>De La Salle University</strong>, majoring in
+          Software Technology. Most of my work sits on the server side: schema design,
+          business rules, authentication, and the data pipelines that feed dashboards.
+        </p>
+        <p>
+          I've led a backend team through a production release, shipped an enrollment system
+          end-to-end as a solo contractor, and moved 38 million taxi trips into a star-schema
+          warehouse without silently losing a row. Outside of code, I draft student legislation
+          and tutor mathematics — both of which are mostly about explaining a hard thing clearly.
+        </p>
+      </div>
+      <div class="about__cards">
+        <div class="stat">
+          <span class="stat__num">3.68</span>
+          <span class="stat__label">CGPA / 4.00</span>
+        </div>
+        <div class="stat stat--green">
+          <span class="stat__num">DOST-SEI</span>
+          <span class="stat__label">Scholar</span>
+        </div>
+        <div class="stat stat--yellow">
+          <span class="stat__num">38.3M</span>
+          <span class="stat__label">rows warehoused</span>
+        </div>
+        <div class="stat stat--blue">
+          <span class="stat__num">30+</span>
+          <span class="stat__label">students tutored</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu">
+      <div class="edu__mark"></div>
+      <div>
+        <h3>BS Computer Science, Major in Software Technology</h3>
+        <p class="edu__meta">De La Salle University · Manila, Philippines · Sept 2024 – Present</p>
+        <p class="edu__note">DOST-SEI Scholar · CGPA 3.68 / 4.00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section--tint" id="projects">
+  <div class="wrap">
+    <h2 class="h2">Projects</h2>
+    <p class="lede">Nine builds across backend systems, data engineering, networking, AI and research tooling.</p>
+
+    <div class="grid">
+
+      <!-- 1 -->
+      <article class="card">
+        <div class="card__top">
+          <span class="chip chip--blue">Backend · Team lead</span>
+        </div>
+        <h3>Boombox — Gym Enrollment System</h3>
+        <p>
+          A web application and management system for a gym, where members enroll in classes and
+          track their membership, coaches see their rosters, and admins manage accounts, schedules,
+          transactions and attendance from one place. I was <strong>lead backend developer among
+          three</strong> on a ten-person team, scheduling milestones and coordinating with the
+          analysts and frontend developers through to production. I owned the entire gym-member
+          backend — account activation, membership management and class enrollment — along with the
+          supporting database schema, authentication, business logic and error handling.
+        </p>
+        <ul class="tags">
+          <li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Node.js</li><li>Vitest</li><li>Auth</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/corfaux/CSSWENG_Boombox_Backend" target="_blank" rel="noopener">Repository ↗</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="card__top">
+          <span class="chip chip--green">Full-stack · Contract</span>
+        </div>
+        <h3>Brainworks Enrollment System</h3>
+        <p>
+          An enrollment and scheduling system built for a tutoring centre as a
+          <strong>contracted sole developer</strong>, covering three roles: a public
+          student/parent enrollment form, a tutor dashboard with a weekly calendar, and admin
+          payment and tutor management. I architected it in layers with a pure domain layer, so
+          the scheduling and hours rules can be unit-tested without touching a database, and
+          planned hourly cron email jobs plus a lint, type-check, Vitest and Playwright gate
+          before every deploy. Where the client's brief was ambiguous, I documented each open
+          question with a proposed default rather than guessing.
+        </p>
+        <ul class="tags">
+          <li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>Neon PostgreSQL</li><li>Playwright</li><li>Vercel</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/nomjie33/brainworks" target="_blank" rel="noopener">Specs &amp; architecture ↗</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card card--wide">
+        <div class="card__top">
+          <span class="chip chip--yellow">Data engineering</span>
+        </div>
+        <h3>NYC TLC Yellow Taxi — ETL Pipeline &amp; OLAP Dashboard</h3>
+        <p>
+          A data warehouse over the NYC Taxi &amp; Limousine Commission trip records. I built the
+          <strong>four-stage ETL pipeline</strong> (load, profile, transform, validate) for a
+          four-person team, ingesting twelve monthly Parquet files — 38,310,226 rows — into a
+          star-schema PostgreSQL warehouse. 38,307,435 rows loaded (99.993%), with all 2,791
+          rejects logged against reason codes such as drop-off before pick-up and trips over 24
+          hours. I imputed defaults for 1,309,356 flex-fare records and deliberately kept 376,883
+          negative-total and 773,457 zero-distance trips as published events, then added a
+          validation step reconciling source rows to loaded plus rejected. Raw data was staged
+          unindexed and indexes deferred to avoid bulk-load bottlenecks.
+        </p>
+        <p>
+          On top of it, I co-built an interactive dashboard showing monthly revenue and trip
+          trends, busiest weekdays and times of day, and vendor performance across boroughs, with
+          filters for revenue, distance and passenger metrics. The team's secondary index and
+          query restructuring cut median drill-down query time by <strong>78–86%</strong> — 9.2s
+          to 2.0s on one machine — verified with EXPLAIN ANALYZE.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>PostgreSQL</li><li>SQL</li><li>Plotly Dash</li><li>pandas</li><li>pyarrow</li><li>Star schema</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/corfaux/STADVDB-Group-10/tree/mc02-main" target="_blank" rel="noopener">Repository ↗</a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="card__top">
+          <span class="chip chip--blue">Networking</span>
+        </div>
+        <h3>MTGNP — Multiplayer Network Protocol</h3>
+        <p>
+          A two-player networked card game implementing a 25-message protocol over TCP, written in
+          Python with the standard library only. The server is built in four strict layers —
+          transport, protocol, session/lifecycle and a pure rules engine that never touches a
+          socket — with all game state owned by a single thread fed from a queue. I built the
+          <strong>client</strong> (MVC: networking, cached state, CLI rendering and command
+          parsing with sequence-number echo) and the <strong>combat engine</strong> on the server
+          side: attackers, blockers, damage ordering and first-strike resolution.
+        </p>
+        <ul class="tags">
+          <li>Python 3.11</li><li>Sockets</li><li>Threading</li><li>Protocol design</li><li>pytest</li><li>MVC</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/nomjie33/csnetwk-MTGNP" target="_blank" rel="noopener">Repository ↗</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="card__top">
+          <span class="chip chip--green">Databases · Desktop</span>
+        </div>
+        <h3>U.V.R! — E-Vehicle Rental System</h3>
+        <p>
+          A database-driven desktop application for an electric vehicle rental business running
+          e-scooters, e-bikes and e-trikes across Metro Manila. It handles customer records with a
+          hierarchical address system, vehicle inventory and deployment between branches, a
+          two-phase rental workflow (booking, then physical pickup), payments across multiple
+          methods, automated late-return penalties, and maintenance with parts inventory and work
+          orders. Built on a three-tier architecture — DAO, service and JavaFX presentation layers
+          — with four branded PDF business reports.
+        </p>
+        <ul class="tags">
+          <li>Java</li><li>JavaFX</li><li>MySQL</li><li>JDBC</li><li>iText</li><li>Three-tier architecture</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/nomjie33/DB-APP-INFOM" target="_blank" rel="noopener">Repository ↗</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="card__top">
+          <span class="chip chip--yellow">Research · Analytics</span>
+        </div>
+        <h3>Nested Navigation Study — Analysis Pipeline</h3>
+        <p>
+          The data-analysis pipeline for a within-subjects usability experiment measuring how
+          three navigation patterns — deep hierarchical, mega-menu and nested dropdown — affect
+          item-finding speed and error recovery across 15 participants. One command validates,
+          cleans, derives the trial metrics (error count, recovery time, find time), produces
+          descriptive tables and twelve figures, fits the inferential models, and writes the
+          hypothesis decisions and a draft results section. It ships with a synthetic data
+          generator — including a deliberately corrupted variant with injected faults used to test
+          the validator — and 43 tests.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>pandas</li><li>Statistical modelling</li><li>Jupyter</li><li>pytest</li><li>Data validation</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/nomjie33/HCI2000-pipeline" target="_blank" rel="noopener">Repository ↗</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <div class="card__top">
+          <span class="chip chip--blue">Machine learning · NLP</span>
+        </div>
+        <h3>PinoyBot — Word-Level Language Identification</h3>
+        <p>
+          An NLP tool that labels every word in code-switched Filipino–English text as Filipino,
+          English or Other, using a Random Forest classifier over tokenized input. Co-developed
+          for an Intelligent Systems course.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>scikit-learn</li><li>Random Forest</li><li>NLP</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/jsh-ncsbg/csintsy-mco2-pinoybot" target="_blank" rel="noopener">Repository ↗</a>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <div class="card__top">
+          <span class="chip chip--green">AI · Search</span>
+        </div>
+        <h3>SokoBot — Sokoban Solver</h3>
+        <p>
+          An AI agent that solves Sokoban puzzles using Greedy Best-First Search guided by a
+          Manhattan-distance heuristic, with a free-play mode and support for custom maps up to
+          24×16. Co-developed for an Intelligent Systems course.
+        </p>
+        <ul class="tags">
+          <li>C++</li><li>Java</li><li>Heuristic search</li><li>Greedy Best-First</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/jsh-ncsbg/csintsy-mco1" target="_blank" rel="noopener">Repository ↗</a>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <div class="card__top">
+          <span class="chip chip--yellow">Data analysis</span>
+        </div>
+        <h3>PH vs. US Stock Market Correlation Study</h3>
+        <p>
+          An exploratory study of a decade of Philippine and U.S. market data (2016–2025), using
+          EDA, correlation analysis and visualisation to measure how closely the two markets move
+          together.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>pandas</li><li>Jupyter Notebook</li><li>EDA</li>
+        </ul>
+        <div class="card__links">
+          <span class="muted">Notebook available on request</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="more">
+      <h3 class="more__h">Also on GitHub</h3>
+      <ul class="more__list">
+        <li><a href="https://github.com/nomjie33/ADPRG-MCO1" target="_blank" rel="noopener">ADPRG-MCO1 — Banking &amp; Currency App</a> <span>JavaScript</span></li>
+        <li><a href="https://github.com/nomjie33/refactoredTCIS" target="_blank" rel="noopener">refactoredTCIS — refactoring exercise</a> <span>Java</span></li>
+        <li><a href="https://github.com/nomjie33" target="_blank" rel="noopener">All repositories</a> <span>github.com/nomjie33</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <h2 class="h2">Experience &amp; Research</h2>
+    <div class="timeline">
+
+      <div class="tl">
+        <div class="tl__dot"></div>
+        <div class="tl__body">
+          <div class="tl__head">
+            <h3>Usability Testing — Moderator &amp; Notetaker</h3>
+            <span class="tl__when">Jul – Aug 2026</span>
+          </div>
+          <p class="tl__org">JuanStop: Unified Government Services Platform · Team of 7</p>
+          <p>
+            Moderated and logged think-aloud usability sessions for a government-services
+            prototype tested across four user personas, recording task success, completion time
+            and criticality ratings (severity × frequency) to prioritise prototype fixes. The
+            team's System Usability Scale average rose from 60.5 — below the 68 benchmark — in
+            round two to 70 in round three after the fixes landed.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl">
+        <div class="tl__dot tl__dot--green"></div>
+        <div class="tl__body">
+          <div class="tl__head">
+            <h3>Tutor</h3>
+            <span class="tl__when">2024 – Present</span>
+          </div>
+          <p class="tl__org">Brainworks Tutoring Center</p>
+          <p>
+            One-on-one mathematics tutoring for more than 30 students, adapting problem-solving
+            strategies to each student to build analytical thinking. Many return each new school
+            year.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEADERSHIP ============ -->
+<section class="section section--tint" id="leadership">
+  <div class="wrap">
+    <h2 class="h2">Leadership &amp; Organizations</h2>
+    <div class="grid grid--3">
+
+      <article class="card card--soft">
+        <span class="chip chip--blue">AY 2024 – 2026</span>
+        <h3>University Student Government — CATCH2T28</h3>
+        <p class="role">Batch Legislator (AY 2025–2026) · Executive Member (AY 2024–2025)</p>
+        <ul class="bullets">
+          <li>Authored the Women's Month resolution and consulted multiple university offices to push bills for greater campus accessibility.</li>
+          <li>Engaged prospective sponsors for a Women's Month initiative offering free menstrual napkins through the clinic.</li>
+          <li>Co-authored bills protecting students, including the Magna Carta for Scholars and the Latin Honors campaign.</li>
+        </ul>
+      </article>
+
+      <article class="card card--soft">
+        <span class="chip chip--green">AY 2024 – 2026</span>
+        <h3>SPRINT</h3>
+        <p class="role">Associate Vice President for Activities</p>
+        <ul class="bullets">
+          <li>Led Humans of SPRINT, an initiative highlighting the founders' contributions, leadership experiences and insights to preserve institutional knowledge and inspire current members.</li>
+        </ul>
+      </article>
+
+      <article class="card card--soft">
+        <span class="chip chip--yellow">AY 2024 – 2025</span>
+        <h3>Lasallian Computer Society</h3>
+        <p class="role">Junior Officer, Activities Committee</p>
+        <ul class="bullets">
+          <li>Hosted <em>Encrypted</em>, a cybersecurity technical talk attended by 50+ participants, with 85% positive audience feedback in post-event evaluations.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <h2 class="h2">Skills</h2>
+    <div class="skills">
+      <div class="skillset">
+        <h3><i class="dot dot--blue"></i>Languages</h3>
+        <ul class="tags tags--lg">
+          <li>Python</li><li>SQL</li><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>C</li><li>C++</li><li>HTML/CSS</li>
+        </ul>
+      </div>
+      <div class="skillset">
+        <h3><i class="dot dot--green"></i>Backend &amp; Web</h3>
+        <ul class="tags tags--lg">
+          <li>Node.js</li><li>Next.js</li><li>React</li><li>Prisma</li><li>Auth.js</li><li>REST API design</li><li>Authentication</li><li>Layered architecture</li>
+        </ul>
+      </div>
+      <div class="skillset">
+        <h3><i class="dot dot--yellow"></i>Databases</h3>
+        <ul class="tags tags--lg">
+          <li>PostgreSQL (Neon)</li><li>MySQL</li><li>Supabase</li><li>Schema design</li><li>Normalization</li><li>Indexing</li>
+        </ul>
+      </div>
+      <div class="skillset">
+        <h3><i class="dot dot--deep"></i>Data &amp; Analytics</h3>
+        <ul class="tags tags--lg">
+          <li>ETL pipelines</li><li>Data warehousing</li><li>Star schema</li><li>OLAP</li><li>Query optimization</li><li>EXPLAIN ANALYZE</li><li>Data cleaning</li><li>EDA</li><li>pandas</li><li>Plotly</li>
+        </ul>
+      </div>
+      <div class="skillset">
+        <h3><i class="dot dot--blue"></i>Machine Learning</h3>
+        <ul class="tags tags--lg">
+          <li>NLP</li><li>scikit-learn</li><li>Random Forest</li><li>Heuristic search</li>
+        </ul>
+      </div>
+      <div class="skillset">
+        <h3><i class="dot dot--green"></i>Tools &amp; Testing</h3>
+        <ul class="tags tags--lg">
+          <li>Git</li><li>GitHub</li><li>GitHub Actions</li><li>Vercel</li><li>Vitest</li><li>Playwright</li><li>pytest</li><li>Jupyter</li>
+        </ul>
+      </div>
+      <div class="skillset">
+        <h3><i class="dot dot--yellow"></i>Research &amp; Communication</h3>
+        <ul class="tags tags--lg">
+          <li>Usability testing</li><li>SUS scoring</li><li>Thematic analysis</li><li>Legislative drafting</li><li>Stakeholder consultation</li><li>Milestone planning</li><li>Event hosting</li><li>Tutoring</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--deep" id="contact">
+  <div class="wrap contact">
+    <h2 class="h2 h2--light">Let's talk</h2>
+    <p class="contact__lede">
+      Open to internships and collaborations in backend development, data engineering and research.
+    </p>
+    <div class="contact__links">
+      <a href="mailto:naomi_reyes@dlsu.edu.ph">naomi_reyes@dlsu.edu.ph</a>
+      <a href="https://github.com/nomjie33" target="_blank" rel="noopener">github.com/nomjie33</a>
+      <a href="https://www.linkedin.com/in/naomireyes33/" target="_blank" rel="noopener">linkedin.com/in/naomireyes33</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© <span id="yr">2026</span> Naomi Isabelle K. Reyes</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // close the mobile menu after a jump
+  document.querySelectorAll('.nav__links a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      document.getElementById('navtoggle').checked = false;
+    });
+  });
+</script>
+</body>
+</html>
